@@ -33,21 +33,32 @@ nome = "Ana" # string
 estudante = True # booleano
 
 
+# Verificar tipo de dado
+
 print(type(idade)) # <class 'int'>
 print(type(altura)) # <class 'float'>
 print(type(nome)) # <class 'str'>
 print(type(estudante)) # <class 'bool'>
 
 
+# Operadores
 soma = 5 + 3 # 8
 produto = 2 * 4.5 # 9.0
+
+# Concatenação -> União dos Textos
+# Unir com o simbolo +
 
 saudacao = "Olá, " + "Maria!" # "Olá, Maria!"
 
 
+
+# Comparações
+
 maior = 10 > 5 # True
 igual = 4 == 4 # True
 diferente = 3 != 2 # True
+
+
 
 
 nome = "Carlos"
