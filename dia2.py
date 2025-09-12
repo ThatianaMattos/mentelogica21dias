@@ -67,6 +67,7 @@ altura = 1.80
 estudante = True
 
 
+
 print("Nome:", nome)
 print("Idade:", idade)
 print("Altura:", altura)
@@ -197,6 +198,54 @@ texto = "Olá, mundo!"
 #variável do tipo lista
 lista = [1, 2, 3, 4, 5]     
 #variável do tipo tupla
+# Criando uma tupla com os horários das refeições
+refeicoes = ("Café da manhã", "Almoço", "Lanche da tarde", "Jantar")
+
+# Mostrando cada refeição
+print("Primeira refeição:", refeicoes[0])
+print("Segunda refeição:", refeicoes[1])
+print("Terceira refeição:", refeicoes[2])
+print("Quarta refeição:", refeicoes[3])
+
+# Tentando alterar (vai dar erro!)
+# refeicoes[0] = "Brunch"   # Descomenta essa linha pra ver o erro
+
+# Criando uma tupla com os moradores
+moradores = ("Daniel", "Thatiana", "Alicia", "Nickolas", "Eliane")
+
+print("Moradores da casa:")
+for pessoa in moradores:
+    print("-", pessoa)
+
+
+# criando tupla com cidades que eu quero visitar
+cidades = ("Sergipe", "Natal", "Aracaju")
+
+print("Cidades que eu quero visitar:")
+for cidade in cidades:
+    print("-", cidade)
+
+print("Primeira cidade:", cidades[0])  # Sergipe
+print("Última cidade:", cidades[-1])   # Aracaju
+
+
+print("Primeira cidade:", cidades[0])  # Sergipe
+print("Última cidade:", cidades[-1])   # Aracaju
+
+
+notas = (7.5, 8.0, 9.2)
+
+media = sum(notas) / len(notas)
+print("Média das notas:", media)
+print("Maior nota:", max(notas))
+print("Menor nota:", min(notas))
+
+
+meses = ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+
+numero = int(input("Digite um número de 1 a 12: "))
+print("O mês escolhido foi:", meses[numero - 1])
 
     
 
