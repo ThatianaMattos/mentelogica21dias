@@ -1,4 +1,4 @@
-#variáveis
+# variáveis
 
 
 idade = 25
@@ -11,15 +11,13 @@ quantidade = -5
 ano = 2021
 
 
-
 altura = 1.75
 peso = 68.5
 temperatura = -3.4
 
 
-
 nome = "João"
-cidade = 'São Paulo'
+cidade = "São Paulo"
 mensagem = "Olá, mundo!"
 
 
@@ -27,45 +25,41 @@ ligado = True
 maior_de_idade = False
 
 
-idade = 28 # inteiro
-altura = 1.70 # float
-nome = "Ana" # string
-estudante = True # booleano
+idade = 28  # inteiro
+altura = 1.70  # float
+nome = "Ana"  # string
+estudante = True  # booleano
 
 
 # Verificar tipo de dado
 
-print(type(idade)) # <class 'int'>
-print(type(altura)) # <class 'float'>
-print(type(nome)) # <class 'str'>
-print(type(estudante)) # <class 'bool'>
+print(type(idade))  # <class 'int'>
+print(type(altura))  # <class 'float'>
+print(type(nome))  # <class 'str'>
+print(type(estudante))  # <class 'bool'>
 
 
 # Operadores
-soma = 5 + 3 # 8
-produto = 2 * 4.5 # 9.0
+soma = 5 + 3  # 8
+produto = 2 * 4.5  # 9.0
 
 # Concatenação -> União dos Textos
 # Unir com o simbolo +
 
-saudacao = "Olá, " + "Maria!" # "Olá, Maria!"
-
+saudacao = "Olá, " + "Maria!"  # "Olá, Maria!"
 
 
 # Comparações
 
-maior = 10 > 5 # True
-igual = 4 == 4 # True
-diferente = 3 != 2 # True
-
-
+maior = 10 > 5  # True
+igual = 4 == 4  # True
+diferente = 3 != 2  # True
 
 
 nome = "Carlos"
 idade = 22
 altura = 1.80
 estudante = True
-
 
 
 print("Nome:", nome)
@@ -80,7 +74,6 @@ print("Ano de Nascimento:", ano_nascimento)
 maior_de_idade = idade >= 18
 
 print("Maior de idade:", maior_de_idade)
-
 
 
 frase = "Olá, meu nome é " + nome + " e eu tenho " + str(idade) + " anos."
@@ -98,40 +91,35 @@ print("Multiplicação:", multiplicacao)
 print("Divisão:", divisao)
 
 
-
-
 celsius = float(input("Digite a temperatura em Celsius: "))
-fahrenheit = celsius * 9/5 + 32
+fahrenheit = celsius * 9 / 5 + 32
 print("A temperatura em Fahrenheit é:", fahrenheit)
 
 
 raio = float(input("Digite o raio do círculo: "))
 pi = 3.14159
-area = pi * raio ** 2
+area = pi * raio**2
 print("A área do círculo é:", area)
 
 
-
-
-
-#variável numérica
+# variável numérica
 
 idade = 42
 
 
-#variável de texto
+# variável de texto
 
 nome = "Thatiana Mattos"
 
-#variável para altura
+# variável para altura
 altura = 1.41
 
-#tipos de dados 
+# tipos de dados
 
-#int, float, textos = strings, bool = true ou false 
-#listas = arrays, tuplas = arrays imutáveis, dicionários = arrays associated
+# int, float, textos = strings, bool = true ou false
+# listas = arrays, tuplas = arrays imutáveis, dicionários = arrays associated
 
-cidade = 'São Paulo'
+cidade = "São Paulo"
 
 
 esta_logado = True
@@ -172,32 +160,32 @@ print("Divisão:", divisao)
 # Conversor de Temperaturas
 
 celsius = float(input("Digite a temperatura em Celsius: "))
-fahrenheit = celsius * 9/5 + 32
+fahrenheit = celsius * 9 / 5 + 32
 print("A temperatura em Fahrenheit é: ", fahrenheit)
 
 # Calculando area de um circulo
 raio = float(input("Digito o raio do circulo: "))
 pi = 3.14159
-area = pi*raio ** 2
+area = pi * raio**2
 print("A área do circulo é:", area)
 
 
 print(nome)
 nome = 2
 print(nome)
- 
- 
-#variável do tipo inteiro
+
+
+# variável do tipo inteiro
 numero = 10
-#variável do tipo decimal
+# variável do tipo decimal
 numero_decimal = 10.5
-#variável do tipo booleano
+# variável do tipo booleano
 booleano = True
-#variável do tipo string
+# variável do tipo string
 texto = "Olá, mundo!"
-#variável do tipo lista
-lista = [1, 2, 3, 4, 5]     
-#variável do tipo tupla
+# variável do tipo lista
+lista = [1, 2, 3, 4, 5]
+# variável do tipo tupla
 # Criando uma tupla com os horários das refeições
 refeicoes = ("Café da manhã", "Almoço", "Lanche da tarde", "Jantar")
 
@@ -226,11 +214,11 @@ for cidade in cidades:
     print("-", cidade)
 
 print("Primeira cidade:", cidades[0])  # Sergipe
-print("Última cidade:", cidades[-1])   # Aracaju
+print("Última cidade:", cidades[-1])  # Aracaju
 
 
 print("Primeira cidade:", cidades[0])  # Sergipe
-print("Última cidade:", cidades[-1])   # Aracaju
+print("Última cidade:", cidades[-1])  # Aracaju
 
 
 notas = (7.5, 8.0, 9.2)
@@ -241,15 +229,20 @@ print("Maior nota:", max(notas))
 print("Menor nota:", min(notas))
 
 
-meses = ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
-         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+meses = (
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+)
 
 numero = int(input("Digite um número de 1 a 12: "))
 print("O mês escolhido foi:", meses[numero - 1])
-
-    
-
-
-
-
-
