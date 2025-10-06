@@ -85,7 +85,7 @@ else:
 
 
 # if condicao:
-# bloco de código a ser executado se a condicao for verdadeira 
+# bloco de código a ser executado se a condicao for verdadeira
 
 idade = 18
 
@@ -93,10 +93,9 @@ if idade >= 18:
     print("Você é maior de idade.")
 
 
-
 # if condicao:
-# bloco de código a ser executado se a condicao for verdadeira 
-# else: é o bloco do código se a condição for falsa 
+# bloco de código a ser executado se a condicao for verdadeira
+# else: é o bloco do código se a condição for falsa
 
 
 idade = 16
@@ -108,9 +107,9 @@ else:
 
 
 # if condicao1:
-# bloco de código a ser executado se a condicao for verdadeira 
-# elif condicao2: é o bloco de código se a condicao2 for verdadeira 
-# elif condicao3: será o bloco de codigo se a condicao3 for verdadeira 
+# bloco de código a ser executado se a condicao for verdadeira
+# elif condicao2: é o bloco de código se a condicao2 for verdadeira
+# elif condicao3: será o bloco de codigo se a condicao3 for verdadeira
 # else: é o bloco do código se todas essas outras condições anteriores forem falsa
 
 nota = 85
@@ -125,7 +124,6 @@ else:
     print("Você precisa melhorar.")
 
 
-
 # Ao dirigir você reage de acordo com o semáforo
 
 semaforo = "vermelho"
@@ -138,7 +136,7 @@ elif semaforo == "vermelho":
     print("Pare o veículo.")
 else:
     print("Sinal desconhecido, proceda com cautela..")
-    
+
 
 # Calculando desconto de compras: : Uma loja oferece descontos com base no valor da compra.
 # Se o valor for maior ou igual a R$1000, o desconto é de 10%.
@@ -148,11 +146,11 @@ else:
 valor_compra = 750
 
 if valor_compra >= 1000:
-    desconto = valor_compra *0.05
+    desconto = valor_compra * 0.05
     print("Você recebeu um desconto de 10%. Valor do desconto: R$", desconto)
 
 elif valor_compra >= 500:
-    desconto = valor_compra *0.10
+    desconto = valor_compra * 0.10
     print("Você recebeu um desconto de 5%. Valor do desconto: R$", desconto)
 
 else:
@@ -212,9 +210,8 @@ elif operacao == "/":
         print("Resultado:", resultado)
     else:
         print("Erro: Divisão por zero!")
-else: 
+else:
     print("Operação inválida.")
-
 
 
 # Classificação de Idade
@@ -243,13 +240,12 @@ else:
 # Um ano é bissexto se for divisível por 4.
 # Mas não é bissexto se for divisível por 100, exceto se for divisível por 400
 
-ano = int(input ("Digite um ano: "))
+ano = int(input("Digite um ano: "))
 
 if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
     print(ano, "é um ano bissexto.")
 else:
     print(ano, "não é um ano bissexto.")
-
 
 
 # Simulador de Caixa Eletrônico
@@ -261,29 +257,29 @@ valor_saque = int(input("Digite o valor do saque: R$"))
 
 if valor_saque <= 0:
     print("Valor inválido.")
-    
+
 else:
     cedulas_100 = valor_saque // 100
     valor_saque %= 100
-    
+
     cedulas_50 = valor_saque // 50
     valor_saque %= 50
-    
+
     cedulas_20 = valor_saque // 20
     valor_saque %= 20
-    
+
     cedulas_10 = valor_saque // 10
     valor_saque %= 10
-    
+
     cedulas_5 = valor_saque // 5
     valor_saque %= 5
-    
+
     cedulas_2 = valor_saque // 2
     valor_saque %= 2
-    
+
     if valor_saque != 0:
         print("Não é possível sacar o valor especificado com as cédulas disponíveis.")
-        
+
     else:
         print("Cédulas entregues:")
         if cedulas_100 > 0:
@@ -298,8 +294,8 @@ else:
             print(f"{cedulas_5} x R$5")
         if cedulas_100 > 0:
             print(f"{cedulas_2} x R$2")
-    
-    
+
+
 # Aprovando Empréstimo Bancário
 # Crie um programa para uma instituição bancária que analisa o pedido de empréstimo.
 # O cliente deve informar o valor do empréstimo, a renda mensal e o número de parcelas.
@@ -318,12 +314,12 @@ if valor_parcela <= limite_parcelas:
 else:
     print("Emprestimo negado.")
     print(f"Valor da parcela R${valor_parcela:.2f} excede 30% da renda mensal.")
-    
-    
+
+
 # Jogo Pedra, Papel ou Tesoura
 # Crie um programa que simula o jogo "Pedra, Papel ou Tesoura" entre o usuário e o computador.
-    
-    
+
+
 import random
 
 opcoes = ["pedra", "papel", "tesoura"]
@@ -336,20 +332,21 @@ print(f"O ccomputador escolheu: {computador}")
 
 if usuario == computador:
     print("Empate!")
-elif (usuario == "pedra" and computador == "tesoura") or \
-     (usuario == "papel" and computador == "pedra") or \
-     (usuario == "tesoura" and computador == "papel"):
+elif (
+    (usuario == "pedra" and computador == "tesoura")
+    or (usuario == "papel" and computador == "pedra")
+    or (usuario == "tesoura" and computador == "papel")
+):
     print("Você venceu!")
 elif usuario in opcoes:
     print("Você perdeu")
 else:
     print("Escolha inválida.")
-    
-    
-    
+
+
 # Calculadora de Tarifas de Táxi
 # Uma empresa de táxi cobra uma tarifa básica de R$4.00, mais R$0.25 por quilômetro rodado. Crie um programa que calcula o valor total da corrida com base na distância percorrida.
-    
+
 
 distancia = float(input("Digite a distância percorrida em km: "))
 
